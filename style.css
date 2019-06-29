@@ -1,33 +1,59 @@
 body {
-    background-color: aquamarine;
+    background-image: url(cat.jpg);
+    background-position: center; /* Center the image */
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1.6fr 0.4fr 1fr;
-    grid-template-areas: ". profile_image profile_image ." ". profile_image profile_image ." ". profile profile ." "links links links links";
-  }
-  
-  .profile_image { 
-      grid-area: profile_image;
-      display: block;
-    }
-  
-  .links {
+    grid-template-areas: ". profile_image profile_image ."". profile_image profile_image ."". profile profile .""links links links links";
+}
+
+.profile_image {
+    grid-area: profile_image;
+}
+
+.profile_image img {
+    width: 100%;
+    height: auto;
+}
+
+.links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
-    grid-template-areas: "github blog twitter linkedin";
+    grid-template-areas: "github blog twitter ";
     grid-area: links;
-  }
-  
-  .github { grid-area: github; }
-  
-  .blog { grid-area: blog; }
-  
-  .twitter { grid-area: twitter; }
-  
-  .linkedin { grid-area: linkedin; }
-  
-  .profile { grid-area: profile; }
+}
+
+.links img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: auto;
+}
+
+.github {
+    grid-area: github;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.linkedin {
+    grid-area: linkedin;
+}
+
+.profile {
+    grid-area: profile;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: medium
+}
