@@ -1,59 +1,66 @@
+.c1 {
+    color: #FFFD82;
+}
+
+.c2 {
+    color: #2D3047;
+}
+
 body {
-    background-image: url(cat.jpg);
-    background-position: center; /* Center the image */
+    background-color: #E7E7E7;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.6fr 0.4fr 1fr;
-    grid-template-areas: ". profile_image profile_image ."". profile_image profile_image ."". profile profile .""links links links links";
+a {
+    text-decoration: underline;
+    color: #192A51;
+    text-decoration-color: #192A51;
 }
 
-.profile_image {
-    grid-area: profile_image;
+a:visited {
+    color: #192A51;
+  }
+
+.border {
+    border-style: double;
+    border-color: #192A51;
+    margin: 5px;
+    border-width: 5px;
 }
 
-.profile_image img {
-    width: 100%;
-    height: auto;
+.baffle {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-    grid-template-areas: "github blog twitter ";
-    grid-area: links;
+.divider {
+    /* text-align: center; */
 }
 
-.links img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: auto;
+.wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
 }
 
-.github {
-    grid-area: github;
+.section {
+    color: #192A51;
+    margin-right: 22.5px;
+    margin-left: 22.5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    line-height: 1.66667;
+    /* width: 100%; */
+    min-height: 100%;
+    font-family: 'PT Mono', monospace;
+    /* text-align: center; */
 }
 
-.blog {
-    grid-area: blog;
-}
 
-.twitter {
-    grid-area: twitter;
-}
 
-.linkedin {
-    grid-area: linkedin;
-}
-
-.profile {
-    grid-area: profile;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    font-size: medium
-}
+/* .baffleInit {} */
