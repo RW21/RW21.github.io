@@ -1,5 +1,3 @@
-// import baffle from 'buffle.js';
-const characters = '▓▒░█▓/ '
 const b = window.baffle('.baffle').set({
     speed: 100
 });
